@@ -1,0 +1,4 @@
+//https://www.javatpoint.com/example-of-sending-email-using-java-mail-api
+//https://www.journaldev.com/2532/javamail-example-send-mail-in-java-smtp
+//https://support.google.com/mail/?p=BadCredentials
+//https://stackoverflow.com/questions/17457386/mocking-javax-mail-transport
