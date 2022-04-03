@@ -79,7 +79,3 @@ a) The -inputs, -outputs input parameter flags active the different inputs/outpu
 b) Is mandatory to inform them (if not the application won't do anything)
 
 
-a) The -inputs, -outputs input parameter flags active the different inputs/output configured in the propertyFile. 
-
-b) Is mandatory to inform them (if not the application won't do anything)
-
