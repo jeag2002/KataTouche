@@ -2,7 +2,7 @@
 
 Test exercice for TOUCHE
 
-## Statement
+## Statement:
 
 Write a program that loads a set of employee records from a flat file,
 and sends a greetings email to all employees whose birthday is today.
