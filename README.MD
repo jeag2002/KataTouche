@@ -37,7 +37,9 @@ The goal of this exercise is to come up with a solution that is:
 ## Steps:
 
 - Go to baselib of the project and execute the following command "mvn clean install"
-- Go to {baselib}/target; and execute the following command "java -jar KataTouche-1.0.0-with-dependencies.jar -inputs=i1 -outputs=o1 -property=props.properties -date=YYYY/MM/DD"
+- Go to {baselib}/target; and execute the following command 
+  "java -jar KataTouche-1.0.0-with-dependencies.jar -inputs=i1 -outputs=o1 -property=props.properties -date=YYYY/MM/DD"
+  
   Being
   -inputs: active input listeners
   -ouputs: active output listeners
@@ -48,24 +50,23 @@ The goal of this exercise is to come up with a solution that is:
 
 ## Implementation tips:
 
-The propertyFile manages all the aplication. Has this aspect 
+The propertyFile (props.properties as default) manages all the aplication. Has this aspect 
 
 ---
-i1.type=FILE							> Input listener type FILE
-i1.file=input.txt						> File where is contained the data (included input.txt)
-i1.header=true							> File's headers flag	
-i1.columns=last_name, first_name, date_of_birth, email		> Headers
-i1.output=o1							> Specific output/s related to input data. If empty the input data will send to
-                                                                  all the active outputs.
+i1.type=FILE							                Input listener type FILE
+i1.file=input.txt						                File where is contained the data (input.txt included as default)
+i1.header=true							                File's headers flag	
+i1.columns=last_name, first_name, date_of_birth, email	Headers
+i1.output=o1							                Specific output/s related to input data. If empty the input data will send to all the active outputs.
 
-o1.type=MAIL							> Output listener type MAIL
-o1.host=smtp.mailtrap.io					> SMTP server host
-o1.port=25							> SMTP server port							
-o1.from=robot@foobar.com					> origin mail address
-o1.subject=Happy birthday					> subject of the mail
-o1.message=Happy birthday, dear {0}!				> body of the mail
+o1.type=MAIL							                Output listener type MAIL
+o1.host=smtp.mailtrap.io				                SMTP server host
+o1.port=25							                    SMTP server port							
+o1.from=robot@foobar.com				                Origin mail address
+o1.subject=Happy birthday				                Subject of the mail
+o1.message=Happy birthday, dear {0}!	                Body of the mail
 ---
 
-the -inputs, -outputs input parameter flags active the different inputs/output configured in the propertyFile. 
-Is mandatory to inform them (if not the application won't do anything)
+a) The -inputs, -outputs input parameter flags active the different inputs/output configured in the propertyFile. 
+b) Is mandatory to inform them (if not the application won't do anything)
 
