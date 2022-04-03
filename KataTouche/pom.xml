@@ -70,38 +70,3 @@
   </build>
 </project>
 
-<!--  
-
- <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-checkstyle-plugin</artifactId>
-         <version>3.1.2</version>
-              
-         <dependencies>
-             <dependency>
-              	<groupId>com.puppycrawl.tools</groupId>
-              	<artifactId>checkstyle</artifactId>
-              	<version>9.1</version>
-             </dependency>
-         </dependencies>
-         <executions>
-             <execution>
-                <id>validate</id>
-                <phase>validate</phase>
-                <configuration>
-              		<includeTestSourceDirectory>true</includeTestSourceDirectory>
-              		<configLocation>kata-checkstyle.xml</configLocation>
-              		<encoding>UTF-8</encoding>
-              		<consoleOutput>true</consoleOutput>
-              		<failsOnError>true</failsOnError>
-              		<linkXRef>false</linkXRef>
-              		<suppressionsLocation>suppressions.xml</suppressionsLocation>
-            	 </configuration>
-               
-                 <goals>
-                    <goal>check</goal>
-                 </goals>
-             </execution>
-        </executions>
-      </plugin>
--->
