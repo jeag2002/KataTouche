@@ -10,11 +10,11 @@ and sends a greetings email to all employees whose birthday is today.
 The flat file is a sequence of records, separated by newlines. These
 are the first few lines:
 
+```
 last_name, first_name, date_of_birth, email
-
 Doe, John, 1982/10/08, john.doe@foobar.com
-
 Ann, Mary, 1975/09/11, mary.ann@foobar.com
+```
 
 The greetings email contains the following text:
 
@@ -54,28 +54,25 @@ The goal of this exercise is to come up with a solution that is:
 
 The propertyFile (props.properties as default) manages all the aplication. Has this aspect 
 
----
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-|INPUT LISTENER CONF                                   |VALUE                                                                                                 |
----------------------------------------------------------------------------------------------------------------------------------------------------------------  
-|i1.type=FILE							               | Input listener type FILE                                                                             |
-|i1.file=input.txt						               | File where is contained the data (input.txt included as default)                                     |
-|i1.header=true							               | File's headers flag                                                                                  |	
-|i1.columns=last_name, first_name, date_of_birth, email| Headers                                                                                              |
-|i1.output=o1							               | Specific output/s related to input data. If empty the input data will send to all the active outputs.|
----------------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-|OUTPUT LISTENER CONF                                  |VALUE                                                                                                 |
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-|o1.type=MAIL							               | Output listener type MAIL                                                                            |   
-|o1.host=smtp.mailtrap.io				               | SMTP server host                                                                                     |
-|o1.port=25							                   | SMTP server port							                                                          |
-|o1.from=robot@foobar.com				               | Origin mail address                                                                                  |
-|o1.subject=Happy birthday				               | Subject of the mail                                                                                  |
-|o1.message=Happy birthday, dear {0}!	               | Body of the mail                                                                                     |
----------------------------------------------------------------------------------------------------------------------------------------------------------------
----
+|INPUT LISTENER CONF|VALUE|
+|-------------------|-----|
+|i1.type=FILE|Input listener type FILE|
+|i1.file=input.txt| File where is contained the data (input.txt included as default)|
+|i1.header=true| File's headers flag|	
+|i1.columns=last_name, first_name, date_of_birth, email| Headers|
+|i1.output=o1| Specific output/s related to input data. If empty the input data will send to all the active outputs.|
+
+
+|OUTPUT LISTENER CONF|VALUE|
+|--------------------|-----|
+|o1.type=MAIL| Output listener type MAIL|   
+|o1.host=smtp.mailtrap.io| SMTP server host|
+|o1.port=25| SMTP server port|
+|o1.from=robot@foobar.com| Origin mail address|
+|o1.subject=Happy birthday| Subject of the mail|
+|o1.message=Happy birthday, dear {0}!| Body of the mail|
+
 
 a) The -inputs, -outputs input parameter flags active the different inputs/output configured in the propertyFile. 
 
@@ -83,5 +80,6 @@ b) Is mandatory to inform them (if not the application won't do anything)
 
 
 a) The -inputs, -outputs input parameter flags active the different inputs/output configured in the propertyFile. 
+
 b) Is mandatory to inform them (if not the application won't do anything)
 
