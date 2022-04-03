@@ -92,12 +92,12 @@ public final class Main {
 	                                       BusinessListenerException {
 		if (args.length < 4) {
 			System.out.println("*** UNEXPECTED INPUT ****");
-			System.out.println("EXPECTED -inputs=i1,i2,... -outputs=o1,o2,... -property=props.properties -date=DD/MM/YYYY (D=Day,M=Month,Y=Year)");
+			System.out.println("EXPECTED -inputs=i1,i2,... -outputs=o1,o2,... -property=props.properties -date=YYYY/MM/DD (D=Day,M=Month,Y=Year)");
 			System.out.println("Being:");
 			System.out.println("-inputs: inputs listeners");
-			System.out.println("-output: outputs listeners");
+			System.out.println("-outputs: outputs listeners");
 			System.out.println("-property: property file, empty if you want property file as default ");
-			System.out.println("-date: DD/MM/YYYY (D=Day, M=Month, Y=Year), empty if you want today  ");
+			System.out.println("-date: YYYY/MM/DD (D=Day, M=Month, Y=Year), empty if you want today  ");
 			System.out.println("************************");
 		} else {
 			Main main = new Main();
