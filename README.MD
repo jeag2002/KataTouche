@@ -43,9 +43,13 @@ The goal of this exercise is to come up with a solution that is:
   "java -jar KataTouche-1.0.0-with-dependencies.jar -inputs=i1 -outputs=o1 -property=props.properties -date=YYYY/MM/DD"
   
   Being
+  
   -inputs: active input listeners
+  
   -ouputs: active output listeners
+  
   -property: property file, empty value if you want default property file 
+  
   -date: YYYY/MM/DD (D=Day, M=Month, Y=Year), empty value if you want today.
   
   e.g java -jar KataTouche-1.0.0-with-dependencies.jar -inputs=i1 -outputs=o1 -property= -date=2022/10/08
