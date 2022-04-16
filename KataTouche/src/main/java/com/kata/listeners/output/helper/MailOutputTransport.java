@@ -5,8 +5,7 @@ import javax.mail.internet.MimeMessage;
 
 /** MailOutputTransport. */
 public class MailOutputTransport {
-	
-	public void send(MimeMessage msg) throws MessagingException {
-	    javax.mail.Transport.send(msg);
-	}
+  public void send(MimeMessage msg) throws MessagingException {
+    javax.mail.Transport.send(msg);
+  }
 }

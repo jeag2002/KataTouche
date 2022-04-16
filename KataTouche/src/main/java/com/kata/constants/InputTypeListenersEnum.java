@@ -2,26 +2,24 @@ package com.kata.constants;
 
 /** InputTypeListenersEnum class. */
 public enum InputTypeListenersEnum {
-	/** FILE.*/
-	FILE("file"), 
-	/** DB.*/
-	DB("db"),
-	/** REST.*/
-	REST("rest");
-	
-	/** value. */
-	private String value;
+  /** FILE.*/
+  FILE("file"), 
+  /** DB.*/
+  DB("db"),
+  /** REST.*/
+  REST("rest");
 
-	/** inputTypeListenersEnum. */
-	InputTypeListenersEnum(String value) {
-        this.value = value;
-    }
+  /** value. */
+  private String value;
 
-	/** getValue. */
-    public String value() {
-        return value;
-    }
-    
-    
-	
+  /** inputTypeListenersEnum. */
+  InputTypeListenersEnum(String value) {
+    this.value = value;
+  }
+
+  /** getValue. */
+  public String value() {
+    return value;
+  }
+
 }
